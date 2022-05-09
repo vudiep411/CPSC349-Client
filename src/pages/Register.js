@@ -52,32 +52,25 @@ const addUser = () => {
 			<div class="alert alert-danger" role="alert">
 				{registerStatus}
 			</div>}
-
-                  <h1> Register </h1>
-                  
-                      <br/>
-                      <div class = "form-group">
-                          <label for ="username"> Username </label> :
-                          <input type="text" class = "form-control" placeholder="Enter username"
-                          onChange={(event) => {setUsername(event.target.value)}}/>
-                      </div>
-                      <br/>
-                      <div class="form-group">
-                          <label for="password">Password</label>: 
-                          <input type="password" class="form-control" placeholder="Enter Password" 
-                          onChange={(event) => {setPassword(event.target.value)}}/>
-                      </div>
-                      <br/>
-                      <div class="form-group">
-                          <div class="row">
-                              <div class="col-sm-6 col-sm-offset-3">
-                              <button
-									class="form-control btn btn-primary" onClick={addUser}>Register</button>
-                              </div>
-                          </div>
-                      </div>
-            
-          
+            <h1>Register</h1><br/>
+                <div class = "form-group">
+                    <label for ="username"> Username </label> :
+                    <input type="text" class = "form-control" placeholder="Enter username"
+                    onChange={(event) => {setUsername(event.target.value)}}/>
+                </div><br/>
+                <div class="form-group">
+                    <label for="password">Password</label>: 
+                    <input type="password" class="form-control" placeholder="Enter Password" 
+                    onChange={(event) => {setPassword(event.target.value)}}/>
+                </div><br/>
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col-sm-6 col-sm-offset-3">
+                        <button
+							class="form-control btn btn-primary" onClick={addUser}>Register</button>
+                        </div>
+                    </div>
+                </div>
               </div>
           </div>
       </div>

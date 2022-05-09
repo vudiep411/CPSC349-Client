@@ -63,10 +63,7 @@ useEffect(() => {
     <a class="navbar-brand" href="/login">Admin Login</a>
 	<Link to="/register" class="btn btn-secondary">Register</Link>
   </nav>
-  </div>
-	
-	<br/>
-	<br/>
+  </div><br/><br/>
 	<div class = "container">
 		<div class = "row">
 			<div class = "col-md-6 col-md-offset-3">
@@ -74,31 +71,25 @@ useEffect(() => {
 			<div class="alert alert-danger" role="alert">
 				{loginStatus}
 			</div>}
-				<h1> Sign In </h1>
-				
-					<br/>
-					<div class = "form-group">
-						<label for ="username"> Username </label> :
-						<input type="text" class = "form-control" placeholder="Enter username"
-						onChange={e => setUsername(e.target.value)}/>
-					</div>
-					<br/>
-					<div class="form-group">
-						<label for="password">Password</label>: <input type="password" class="form-control"
-							placeholder="Enter Password" 
-							onChange={e => setPassword(e.target.value)}/>
-					</div>
-					<br/>
-					<div class="form-group">
-						<div class="row">
-							<div class="col-sm-6 col-sm-offset-3">
-								<button class="form-control btn btn-primary"
-								onClick={loginHandler}>Login</button>
-							</div>
+			<h1>Sign In</h1><br/>
+				<div class = "form-group">
+					<label for ="username"> Username </label> :
+					<input type="text" class = "form-control" placeholder="Enter username"
+					onChange={e => setUsername(e.target.value)}/>
+				</div><br/>
+				<div class="form-group">
+					<label for="password">Password</label>: <input type="password" class="form-control"
+					placeholder="Enter Password" 
+					onChange={e => setPassword(e.target.value)}/>
+				</div><br/>
+				<div class="form-group">
+					<div class="row">
+						<div class="col-sm-6 col-sm-offset-3">
+							<button class="form-control btn btn-primary"
+							onClick={loginHandler}>Login</button>
 						</div>
 					</div>
-				
-		
+				</div>
 			</div>
 		</div>
 	</div>

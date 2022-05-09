@@ -85,7 +85,7 @@ const updateEmployee = (id) => {
         </form>
 		<br/>
 		<hr/>
-		<Link to="/"> Back to Employee List</Link>
+		<Link to="/">Back to Employee List</Link>
 	</div>
     </>
   )

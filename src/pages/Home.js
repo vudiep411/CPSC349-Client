@@ -66,7 +66,6 @@ function Home() {
             </tr>
           </thead>   
           <tbody>
-          
       {employeeList.filter((val) => {
         const com = val.name + val.id + val.supervisors
         if(searchTerm === "") {
